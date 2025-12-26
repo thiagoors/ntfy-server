@@ -1,0 +1,11 @@
+{
+  "name": "ntfy-server",
+  "version": "1.0.0",
+  "description": "ntfy push notification server wrapper for SquareCloud",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["ntfy", "push", "notifications"],
+  "license": "MIT"
+}

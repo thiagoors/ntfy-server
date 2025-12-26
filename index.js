@@ -57,7 +57,12 @@ async function setup() {
 
   console.log('Starting ntfy server on port 80...');
 
-  const ntfy = spawn(NTFY_BINARY, ['serve', '--listen-http', ':80', '--behind-proxy'], {
+  const ntfy = spawn(NTFY_BINARY, [
+    'serve',
+    '--listen-http', ':80',
+    '--behind-proxy',
+    '--upstream-base-url', 'https://ntfy.sh'
+  ], {
     stdio: 'inherit'
   });
 

@@ -61,6 +61,7 @@ async function setup() {
     'serve',
     '--listen-http', ':80',
     '--behind-proxy',
+    '--base-url', 'https://ntfygreycom.squareweb.app',
     '--upstream-base-url', 'https://ntfy.sh'
   ], {
     stdio: 'inherit'
